@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creart — Creatividad que mueve resultados</title>
+  <meta name="description" content="Agencia de publicidad y marketing digital con +25 años de experiencia. Branding, campañas digitales, desarrollo web y consultoría estratégica.">
+  <meta property="og:title" content="Creart — Creatividad que mueve resultados">
+  <meta property="og:description" content="Agencia de publicidad y marketing digital con +25 años de impacto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creart.cl">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <img src="assets/img/logo-creart.svg" alt="Creart" class="logo-img">
+      </a>
+      <nav class="nav__menu" id="navMenu">
+        <a href="#trabajo" class="nav__link">Trabajo</a>
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="nosotros.html" class="nav__link">Nosotros</a>
+        <a href="unete.html" class="nav__link">Únete</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+      <button class="nav__hamburger" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav">
+      <a href="#trabajo" class="mobile-menu__link">Trabajo</a>
+      <a href="#servicios" class="mobile-menu__link">Servicios</a>
+      <a href="nosotros.html" class="mobile-menu__link">Nosotros</a>
+      <a href="unete.html" class="mobile-menu__link">Únete</a>
+      <a href="#contacto" class="mobile-menu__link">Contacto</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Agencia creativa y de marketing digital</p>
+        <h1 class="hero__title">
+          <span class="hero__line">Una agencia creativa</span>
+          <span class="hero__line">independiente con <em>+25 años</em></span>
+          <span class="hero__line">moviendo resultados.</span>
+        </h1>
+        <p class="hero__sub">Diseñamos estrategias de marca y campañas digitales que ayudan a las empresas a crecer y diferenciarse.</p>
+      </div>
+    </section>
+
+    <!-- VIDEO / VISUAL -->
+    <section class="hero-media reveal">
+      <div class="hero-media__wrapper">
+        <div class="hero-media__placeholder">
+          <span>Video reel / imagen principal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJO DESTACADO -->
+    <section class="work" id="trabajo">
+      <div class="container">
+        <div class="work__header reveal">
+          <h2 class="work__heading">Trabajo</h2>
+        </div>
+        <div class="work__grid">
+          <a href="trabajo.html" class="work__item reveal">
+            <div class="work__img" style="background:#1e1612;">
+              <span class="work__placeholder">Imagen proyecto</span>
+            </div>
+            <div class="work__info">
+              <h3 class="work__name">Inmobiliaria Altas Cumbres</h3>
+              <span class="work__desc">Branding y estrategia de marca para inmobiliaria líder regional</span>
+            </div>
+          </a>
+          <a href="trabajo.html" class="work__item reveal">
+            <div class="work__img" style="background:#121620;">
+              <span class="work__placeholder">Imagen proyecto</span>
+            </div>
+            <div class="work__info">
+              <h3 class="work__name">Siena Inmobiliaria</h3>
+              <span class="work__desc">Campañas digitales de alto rendimiento en Meta y Google Ads</span>
+            </div>
+          </a>
+          <a href="trabajo.html" class="work__item reveal">
+            <div class="work__img" style="background:#0f1e16;">
+              <span class="work__placeholder">Imagen proyecto</span>
+            </div>
+            <div class="work__info">
+              <h3 class="work__name">Norte Verde</h3>
+              <span class="work__desc">Diseño y desarrollo web con foco en conversión inmobiliaria</span>
+            </div>
+          </a>
+          <a href="trabajo.html" class="work__item reveal">
+            <div class="work__img" style="background:#1a121e;">
+              <span class="work__placeholder">Imagen proyecto</span>
+            </div>
+            <div class="work__info">
+              <h3 class="work__name">Echeverría Izquierdo</h3>
+              <span class="work__desc">Campaña integral de posicionamiento y generación de leads</span>
+            </div>
+          </a>
+        </div>
+        <div class="work__more reveal">
+          <a href="trabajo.html" class="link-arrow">Ver todos los proyectos <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO -->
+    <section class="manifesto reveal">
+      <div class="container">
+        <h2 class="manifesto__text">
+          No hacemos publicidad bonita. Hacemos publicidad <em>que vende.</em> Cada idea tiene un propósito. Cada campaña, un resultado medible.
+        </h2>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <h2 class="services__heading reveal">Servicios</h2>
+        <div class="services__list">
+
+          <div class="accordion reveal" data-accordion>
+            <button class="accordion__header" aria-expanded="false">
+              <span class="accordion__title">Marketing Digital</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                <p class="accordion__desc">Campañas en Meta Ads, Google Ads y SEM con foco en conversión real. Estrategias de email marketing, gestión de redes sociales y analítica avanzada.</p>
+                <div class="accordion__tags">
+                  <span>Meta Ads</span>
+                  <span>Google Ads</span>
+                  <span>SEM</span>
+                  <span>Email Marketing</span>
+                  <span>Redes Sociales</span>
+                  <span>Analítica</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion reveal" data-accordion>
+            <button class="accordion__header" aria-expanded="false">
+              <span class="accordion__title">Branding & Diseño</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                <p class="accordion__desc">Identidad visual, sistemas de marca, material gráfico y audiovisual. Construimos marcas que se recuerdan y se diferencian.</p>
+                <div class="accordion__tags">
+                  <span>Identidad Visual</span>
+                  <span>Sistemas de Marca</span>
+                  <span>Diseño Gráfico</span>
+                  <span>Material Audiovisual</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion reveal" data-accordion>
+            <button class="accordion__header" aria-expanded="false">
+              <span class="accordion__title">Desarrollo Web</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                <p class="accordion__desc">Sitios web, landing pages y plataformas digitales diseñados para convertir. Optimización de velocidad y experiencia mobile-first.</p>
+                <div class="accordion__tags">
+                  <span>Sitios Web</span>
+                  <span>Landing Pages</span>
+                  <span>E-Commerce</span>
+                  <span>UX/UI</span>
+                  <span>Mobile-First</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion reveal" data-accordion>
+            <button class="accordion__header" aria-expanded="false">
+              <span class="accordion__title">Consultoría Estratégica</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                <p class="accordion__desc">Diagnóstico de marca, planificación de comunicaciones y estrategia comercial. Acompañamos la toma de decisiones con datos y visión de negocio.</p>
+                <div class="accordion__tags">
+                  <span>Diagnóstico de Marca</span>
+                  <span>Estrategia Comercial</span>
+                  <span>Planificación</span>
+                  <span>Consultoría</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="services__cta reveal">
+          <a href="#contacto" class="link-arrow">Descubre cómo podemos ayudarte <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="stats reveal">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <span class="stats__number" data-target="25">0</span><span class="stats__suffix">+</span>
+            <span class="stats__label">Años de experiencia</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number" data-target="50">0</span><span class="stats__suffix">+</span>
+            <span class="stats__label">Clientes activos</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number" data-target="200">0</span><span class="stats__suffix">+</span>
+            <span class="stats__label">Webs realizadas</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number" data-target="2000">0</span><span class="stats__suffix">+</span>
+            <span class="stats__label">Campañas digitales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES MARQUEE -->
+    <section class="clients">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="marquee__item">Inmobiliaria Altas Cumbres</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Siena Inmobiliaria</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Inmobiliaria Fundamenta</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Echeverría Izquierdo</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Norte Verde</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Inmobiliaria Manquehue</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Ralei Grupo Inmobiliario</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">SuKasa</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Inmobiliaria Altas Cumbres</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Siena Inmobiliaria</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Inmobiliaria Fundamenta</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Echeverría Izquierdo</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Norte Verde</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Inmobiliaria Manquehue</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">Ralei Grupo Inmobiliario</span>
+          <span class="marquee__dot"></span>
+          <span class="marquee__item">SuKasa</span>
+          <span class="marquee__dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__left reveal">
+            <h2 class="contact__heading">Conversemos</h2>
+            <p class="contact__sub">¿Listo para elevar tu marca? Cuéntanos sobre tu proyecto y te contactamos.</p>
+            <div class="contact__direct">
+              <a href="mailto:hola@creart.cl">hola@creart.cl</a>
+              <a href="tel:+56993459482">+56 9 9345 9482</a>
+            </div>
+          </div>
+          <form class="contact__form reveal" id="contactForm">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="servicio">
+              <option value="" disabled selected>Servicio de interés</option>
+              <option value="marketing">Marketing Digital</option>
+              <option value="branding">Branding & Diseño</option>
+              <option value="web">Desarrollo Web</option>
+              <option value="consultoria">Consultoría Estratégica</option>
+            </select>
+            <textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto" rows="4"></textarea>
+            <button type="submit" class="btn btn--primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/logo-creart.svg" alt="Creart" class="logo-img">
+        </div>
+        <div class="footer__copy">
+          <p>Una agencia creativa independiente con más de 25 años diseñando marcas, campañas y experiencias digitales que generan resultados reales.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__links">
+          <a href="#trabajo">Trabajo</a>
+          <a href="#servicios">Servicios</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="unete.html">Únete</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <p class="footer__legal">&copy; 2026 Creart. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/56993459482" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="whatsapp__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

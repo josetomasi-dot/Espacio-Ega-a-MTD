@@ -1,0 +1,576 @@
+/* ========================================
+   CREART — Pages Styles
+   ======================================== */
+
+/* Active nav link */
+.nav__link--active {
+  color: var(--color-text);
+}
+
+.nav__link--active::after {
+  width: 100%;
+}
+
+/* ========================================
+   PAGE HERO (internal pages)
+   ======================================== */
+.page-hero {
+  padding-top: calc(var(--nav-height) + 80px);
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin-bottom: 24px;
+}
+
+.page-hero__sub {
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--color-text-muted);
+  font-weight: 300;
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* ========================================
+   SERVICE BLOCKS (servicios.html)
+   ======================================== */
+.service-block {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-block--alt {
+  background: var(--color-bg-alt);
+}
+
+.service-block__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.service-block__number {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.service-block__title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.service-block__desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.service-block__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.service-block__list li {
+  font-size: 16px;
+  color: var(--color-text);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.service-block__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+/* ========================================
+   CONTACT PAGE
+   ======================================== */
+.contact-page {
+  padding: 100px 0;
+}
+
+.contact-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.contact-page__block {
+  margin-bottom: 36px;
+}
+
+.contact-page__block h3 {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.contact-page__block a,
+.contact-page__block p {
+  font-size: 18px;
+  color: var(--color-text-muted);
+  transition: color 0.3s;
+  line-height: 1.6;
+}
+
+.contact-page__block a:hover {
+  color: var(--color-text);
+}
+
+.contact-page__social h3 {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.contact-page__social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-page__social-links a {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  transition: color 0.3s;
+}
+
+.contact-page__social-links a:hover {
+  color: var(--color-text);
+}
+
+.contact-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-page__form input,
+.contact-page__form textarea,
+.contact-page__form select {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 300;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.contact-page__form input::placeholder,
+.contact-page__form textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.contact-page__form select {
+  appearance: none;
+  color: var(--color-text-muted);
+}
+
+.contact-page__form input:focus,
+.contact-page__form textarea:focus,
+.contact-page__form select:focus {
+  border-color: var(--color-accent);
+}
+
+.contact-page__form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-page__form .btn {
+  align-self: flex-start;
+}
+
+/* ========================================
+   ABOUT / NOSOTROS
+   ======================================== */
+.about-manifesto {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-manifesto__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-manifesto__title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  position: sticky;
+  top: 120px;
+}
+
+.about-manifesto__text {
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.about-manifesto__text:last-child {
+  margin-bottom: 0;
+}
+
+/* Values */
+.values {
+  padding: var(--section-padding) 0;
+  background: var(--color-bg-alt);
+}
+
+.values__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 80px;
+}
+
+.values__number {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.values__name {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.values__desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+/* ========================================
+   PORTFOLIO / TRABAJO
+   ======================================== */
+.portfolio-filters {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover {
+  border-color: var(--color-text-muted);
+  color: var(--color-text);
+}
+
+.filter-btn--active {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+.portfolio {
+  padding: 60px 0 var(--section-padding);
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.portfolio__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  display: block;
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.portfolio__item.hidden {
+  display: none;
+}
+
+.portfolio__img {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.portfolio__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.portfolio__item:hover .portfolio__overlay {
+  transform: translateY(0);
+}
+
+.portfolio__item:hover .portfolio__img {
+  transform: scale(1.05);
+}
+
+.portfolio__category {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.portfolio__name {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.portfolio__brief {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* ========================================
+   CAREERS / ÚNETE
+   ======================================== */
+.careers-culture {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.careers-culture__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.careers-culture__item h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.careers-culture__item p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.positions {
+  padding: var(--section-padding) 0;
+  background: var(--color-bg-alt);
+}
+
+.positions__note {
+  margin-top: 40px;
+  font-size: 16px;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.careers-form-section {
+  padding: var(--section-padding) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.careers-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.careers-form__info h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.careers-form__info p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.careers-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.careers-form input,
+.careers-form textarea,
+.careers-form select {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 300;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.careers-form input::placeholder,
+.careers-form textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.careers-form select {
+  appearance: none;
+  color: var(--color-text-muted);
+}
+
+.careers-form input:focus,
+.careers-form textarea:focus,
+.careers-form select:focus {
+  border-color: var(--color-accent);
+}
+
+.careers-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.careers-form .btn {
+  align-self: flex-start;
+}
+
+/* ========================================
+   RESPONSIVE — PAGES
+   ======================================== */
+@media (max-width: 1024px) {
+  .service-block__grid,
+  .contact-page__grid,
+  .about-manifesto__grid,
+  .careers-form__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-manifesto__title {
+    position: static;
+  }
+
+  .values__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .careers-culture__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding-top: calc(var(--nav-height) + 50px);
+    padding-bottom: 50px;
+  }
+
+  .service-block {
+    padding: 60px 0;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
